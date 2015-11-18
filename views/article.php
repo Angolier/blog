@@ -12,9 +12,8 @@
         <main>
             <article class="post">
                 <header>
-                    <h1><? = $article['title'] ?></h1>
-                    <!--<time datetime=" 2015-11-18T01:26:00">Опубликовано: 18 ноября 2015</time>-->
-                    <em>Опубликовано: <? = $article['date'] ?></em>
+                    <h1><?= $article['title'] ?></h1>
+                    <em>Опубликовано: <?= $article['date'] ?></em>
                 </header>
                 <!--<section class="intro">
                     <p>
@@ -24,7 +23,7 @@
                 <section class="content">
                     <h2>Очередной заголовок</h2>-->
                     <p>
-                        <? = $article['content'] ?>
+                        <?= $article['content'] ?>
                     </p>
                 </section>
             </article>

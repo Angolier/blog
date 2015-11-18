@@ -13,9 +13,8 @@
             <?php foreach($articles as $a): ?>
             <article class="post">
                 <header>
-                    <h1><a href="articles.php?id=<? = $a['id'] ?>"> <? = $a['title'] ?> </a></h1>
-                    <!--<time datetime=" 2015-11-18T01:26:00">Опубликовано: 18 ноября 2015</time>-->
-                    <em>Опубликовано: <? = $article['date'] ?></em>
+                    <h1><a href="article.php?id=<?= $a['id'] ?>"> <?= $a['title'] ?> </a></h1>
+                    <em>Опубликовано: <?= $a['date'] ?></em>
                 </header>
                 <!--<section class="intro">
                     <p>
@@ -25,7 +24,7 @@
                 <section class="content">
                     <h2>Очередной заголовок</h2>-->
                     <p>
-                        <? = $a['content'] ?>
+                        <?= $a['content'] ?>
                     </p>
                 </section>
             </article>
